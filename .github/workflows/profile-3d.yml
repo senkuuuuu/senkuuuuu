@@ -18,6 +18,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          FROM: 2025-01-01
+          TO: 2025-12-31
       - name: Commit & Push
         run: |
           git config user.name github-actions
